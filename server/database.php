@@ -7,9 +7,9 @@ class Database
 	private $pdo;    
 	
 	const DBMS = 'mysql';
-	const USERNANE = "sujunhao";
-	const PASSWORD = 'IUNVbBTLclO2PJ6O';
-	const HOST = 'www.chdbwtx.cn';
+	const USERNANE = "XXXXX";
+	const PASSWORD = 'XXXXXXXXXX';
+	const HOST = 'XXXXXXXXXXXXXX';
 	const DB = 'mini';
 
 	public function getConnect() 
