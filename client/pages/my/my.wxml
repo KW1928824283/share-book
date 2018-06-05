@@ -1,0 +1,11 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="userinfo">
+
+
+      <image  class="userinfo-avatar" src="{{accountInfo.head_url}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{accountInfo.nickName}}({{accountInfo.uid}})</text>
+
+  </view>
+    <button class='' bindtap='loginout' >退出登录</button>
+</view>

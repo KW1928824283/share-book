@@ -1,0 +1,65 @@
+/* pages/bookDetail/bookDetail.wxss */
+/* pages/bookDetail/bookDetail.wxss */
+.manager{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  
+}
+.book{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  
+}
+.cover{
+  padding-left: 30rpx;
+  height: 500rpx;
+  width: 300rpx;
+}
+.info{
+  font-family: "MicroSoft YaHei";
+  margin-top: 65rpx;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.bookInfo{
+  margin: 20rpx;
+  font-size: 35rpx;
+}
+.tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tag-item{
+  font-size: 28rpx;
+  margin: 10rpx;
+  background-color: #27a096;
+  border-radius: 10rpx;
+}
+.back{
+  color: #27a096;
+  background-color: #fff;
+}
+.lend{
+  color: #27a096;
+  background-color: #fff;
+}
+.footer{
+  margin-top: 20rpx;
+  margin-bottom: 35rpx;
+}
+.btn{
+  width: 90%;
+  margin-left: 5%;
+  background-color: #27a096;
+  color: #fff;
+}
+.lendtext{
+  font-size: 35rpx;
+  text-align: center;
+}

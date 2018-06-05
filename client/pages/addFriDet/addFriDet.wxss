@@ -1,0 +1,33 @@
+/* pages/addFriDet/addFriDet.wxss */
+@import "../../utils/weui.wxss";
+.containor{
+  margin: 30rpx;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx;
+}
+.head-img{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.head-text{
+  font-size: 40rpx;
+  height: 128rpx;
+  color: #27a096;
+  margin-top: 60rpx;
+}
+.tip{
+  font-size: 30rpx;
+  font-weight: lighter;
+}
+.height{
+  height: 30rpx;
+}
+.btn{
+  background-color: #27a096;
+  color: #fff;
+}

@@ -1,0 +1,120 @@
+<!--pages/bookResDet/bookResDet.wxml-->
+<view class='tip'>
+  还书
+</view>
+  <view wx:for="{{retMsgList}}" wx:key="key">
+  <view class='ret-item'>
+    <form bindsubmit='retRes'>
+        <view style='display:none'>
+            <input type='hidden' name="reqUid"  value='{{item.reqUid}}'/>
+            <input type='hidden' name="book_isbn" value='{{item.book_isbn}}' />
+            <input type='hidden' name="resUid" value='{{item.resUid}}' />
+            
+        </view>
+        <view class='book'>
+
+          <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+                  
+
+            <view class='book_right'>
+              <view class='book_title'>{{item.title}}</view>
+
+              <view class='book_author'>{{item.author}}</view>
+            </view>
+
+          </view>
+          <view class='des'>{{item.resNickName}}还书给你</view>
+        <button formType="submit">接收</button>
+
+
+    </form>
+
+    </view>
+  
+  </view>
+
+
+<view class='tip'>
+  借书
+</view>
+
+  <view wx:for="{{lendMsgList}}" wx:key="key" >
+  <view class='ret-item'>
+    <form bindsubmit='lendRes'>
+      
+      
+      
+        <view style='display:none'>
+            <input type='hidden' name="reqUid"  value='{{item.reqUid}}'/>
+            <input type='hidden' name="book_isbn" value='{{item.book_isbn}}' />
+            <input type='hidden' name="resUid" value='{{item.resUid}}' />
+            <input type='hidden' name="reqNickName"  value='{{item.reqNickName}}' />
+            <input type='hidden' name="title" value='{{item.title}}' />
+            <input type='hidden' name="book_cover" value='{{item.book_cover}}' />
+            <input type='hidden' name="author" value='{{item.author}}' />
+            <input type='hidden' name="time" value='{{item.time}}' />
+        </view>
+        
+        <view class='book'>
+
+          <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+                  
+
+            <view class='book_right'>
+              <view class='book_title'>{{item.title}}</view>
+
+              <view class='book_author'>{{item.author}}</view>
+            </view>
+
+          </view>
+          <view  class='des'>{{item.reqNickName}}借书给你</view>
+        <view class='lendBtn'>
+            <button   class='ingore'  id='{{item.reqUid}}' data-book_isbn='{{item.book_isbn}}' bindtap='Ingore' >忽略</button>
+            <button style='background-color: #27a096;color: #fff;'  formType="submit">接收</button>
+        </view>
+        
+    </form>
+    </view>
+</view>
+<view class='tip'>
+  请求
+</view>
+
+ <view wx:for="{{reqLendMsgList}}" wx:key="key" >
+  <view class='ret-item'>
+    <form bindsubmit='reqlendRes'>
+      
+      
+      
+        <view style='display:none'>
+            <input type='hidden' name="reqUid"  value='{{item.reqUid}}'/>
+            <input type='hidden' name="book_isbn" value='{{item.book_isbn}}' />
+            <input type='hidden' name="resUid" value='{{item.resUid}}' />
+            <input type='hidden' name="reqNickName"  value='{{item.reqNickName}}' />
+            <input type='hidden' name="title" value='{{item.title}}' />
+            <input type='hidden' name="book_cover" value='{{item.book_cover}}' />
+            <input type='hidden' name="author" value='{{item.author}}' />
+            <input type='hidden' name="time" value='{{item.time}}' />
+        </view>
+        
+        <view class='book'>
+
+          <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+                  
+
+            <view class='book_right'>
+              <view class='book_title'>{{item.title}}</view>
+
+              <view class='book_author'>{{item.author}}</view>
+            </view>
+
+          </view>
+          <view  class='des'>{{item.reqNickName}}向你借书</view>
+        <view class='lendBtn'>
+            <button   class='ingore'  id='{{item.reqUid}}' data-book_isbn='{{item.book_isbn}}' bindtap='reqIngore' >忽略</button>
+            <button style='background-color: #27a096;color: #fff;'  formType="submit">接收</button>
+        </view>
+        
+    </form>
+    </view>
+</view>

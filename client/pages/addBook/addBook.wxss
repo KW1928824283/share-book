@@ -1,0 +1,72 @@
+/* pages/addBook/addBook.wxss */
+/* pages/addBook/addBook.wxss */
+.containor{
+  margin-top: 30rpx;
+  margin-bottom: 50rpx;
+}
+.book_cover{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cover{
+  width: 300rpx;
+  height: 400rpx;
+
+}
+.tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tag-item{
+  font-size: 28rpx;
+  margin: 10rpx;
+  background-color: #27a096;
+  border-radius: 10rpx;
+}
+.title{
+  padding: 5rpx 15rpx 5rpx 15rpx;
+  margin-top:   10rpx;
+  border-top: 1px solid #27a096;
+  display: flex;
+  flex-direction: row;
+  font-size: 40rpx;
+  
+  
+}
+.content{
+    padding-left: 50rpx;
+}
+.ino-text{
+  margin-left: 20rpx;
+}
+.count{
+  margin-left: 20rpx;
+}
+
+.bottom{
+  border-bottom: 1px solid #27a096;
+}
+
+.info-content{
+  
+  display: flex;
+  justify-content: center;
+  margin: 20rpx;
+  border: 1px solid #27a096;
+}
+.info-input{
+  margin:  10rpx 0;
+  font-size: 30rpx;
+}
+.addBtn{
+  
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
+}
+.btn{
+  background-color: #27a096;
+  color: #fff;
+}

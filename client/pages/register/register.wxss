@@ -1,0 +1,15 @@
+/* pages/register/register.wxss */
+@import "../../utils/weui.wxss";
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #27a096;
+  color: #fff;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}

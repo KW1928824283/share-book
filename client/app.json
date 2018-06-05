@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/my/my",
+    "pages/friend/friend",
+    "pages/addFriend/addFriend",
+    "pages/addFriDet/addFriDet",
+    "pages/addBook/addBook",
+    "pages/bookDetail/bookDetail",
+    "pages/friendList/friendList",
+    "pages/addResDet/addResDet",
+    "pages/bookResDet/bookResDet",
+    "pages/friBookDet/friBookDet",
+    "pages/addFriShare/addFriShare"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "慕读",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#27a096"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书房",
+        "iconPath": "icon/book.png",
+        "selectedIconPath": "icon/book_selected.png"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "书友",
+        "iconPath": "icon/friend.png",
+        "selectedIconPath": "icon/friend_selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_selected.png"
+      }
+    ]
+  }
+}

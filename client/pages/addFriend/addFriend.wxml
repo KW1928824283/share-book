@@ -1,0 +1,37 @@
+<!--pages/addFriend/addFriend.wxml-->
+
+<view class='head'>
+
+  <input class='search' bindinput='uidInput'  type='text' placeholder='输入账号'/>
+
+
+<view>
+
+  <view wx:for="{{searchList}}" wx:key= "key">
+    
+        
+        <view class='item' id='{{item.uid}}' data-head_url='{{item.head_url}}' data-nickName='{{item.nickName}}' bindtap='addSelect' >
+            <image class='item-img' src='{{item.head_url}}'></image>
+            <view class='item-text'>
+                <view class='item-Name'>
+                  {{item.nickName}}
+                </view>
+                <view class='item-id'>
+                  ({{item.uid}})
+                </view>
+            </view>
+             
+    
+    
+        </view>
+    
+  </view>
+
+</view>
+
+
+
+
+</view>
+
+

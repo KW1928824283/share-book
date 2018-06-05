@@ -1,0 +1,53 @@
+<!--pages/addFriDet/addFriDet.wxml-->
+<view class='containor'>
+
+
+
+<view>
+
+
+  <view class='head'>
+    <image class='head-img' src='{{friend_head_url}}'></image>
+    <text class='head-text'>{{friendName}}</text>
+  </view>
+
+  <view>
+      <text class='tip'>填写验证信息</text>
+  </view>
+    
+     
+    
+    <view class="page-section-title">我是</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='selfDescInput' type='text' maxlength='30'  value='{{selfDesc}}' />
+            </view>
+          </view>
+        </view>
+
+    <view class='height'>
+    
+    </view>
+    <view>
+      <text class='tip'>设置备注</text>
+  </view>
+    <view class="page-section-title">备注</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='friendNameInput' type='text' maxlength='30' value='{{friendName}}' />
+            </view>
+          </view>
+        </view>
+    
+
+    
+    <view class='height'>
+    
+    </view>
+   
+    <button class='btn' bindtap='sendReq'>发送请求</button>
+</view>
+
+</view>

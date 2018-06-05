@@ -1,0 +1,101 @@
+/**index.wxss**/
+@import "../../utils/weui.wxss";
+.head{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20rpx 20rpx 20rpx 0;
+  vertical-align: middle;
+}
+.addBook{
+  width: 180rpx;
+  height: 70rpx;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #27a096 ;
+  padding-top: 18rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  /* margin-top: 10rpx; */
+}
+.nav-title{
+  border-bottom: solid 1px #27a096;
+}
+.item-navigator{
+  height: 70rpx;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx 0 20rpx;
+}
+.navigator-text{
+  display: flex;
+  flex-direction: row;
+}
+.title-item{
+
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70rpx;
+  vertical-align: middle;
+  padding: 0 20rpx 0 20rpx;
+  border-bottom: 1px solid #27a096;
+
+}
+
+.title-text{
+  width: 100%;
+  font-size: 40rpx;
+  vertical-align: middle;
+}
+.title_left{
+  display: flex;
+  flex-direction: row;
+}
+.book{
+  display: flex;
+  direction: row;
+  border-bottom: 1px #27a096 solid
+}
+.book_cover{
+    margin:20rpx; 
+    width:180rpx;
+    height: 200rpx;
+    background-color: #cbfffb; 
+}
+.book_right{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+}
+.book_author{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}
+.tip{
+  background-color: #eee;
+  padding: 0 0 0 20rpx;
+  border-bottom: 1px solid #27a096;
+}
+.height{
+  height: 30rpx;
+}
+
+
+
+
+
+

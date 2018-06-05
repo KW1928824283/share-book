@@ -1,0 +1,230 @@
+<!--pages/addBook/addBook.wxml-->
+<view class='containor'>
+
+
+<view>
+  <!-- 书籍的图片 -->
+   <view  class='book_cover'>
+    
+      <image bindtap='changeCover' name="imageBlock" class='cover' mode='aspectFit' src='{{book_cover}}'></image>
+    
+  </view> 
+  <!-- 书籍的标签 -->
+  <view>
+    标签：
+
+  
+
+    <view wx:if="{{istags}}">
+
+
+        <view class='tags'>
+          <view  wx:for="{{tags}}" wx:key="key">
+              <view class='tag-item'>{{item}}</view>  
+          </view>
+        </view>
+
+
+        
+    
+
+
+    
+    </view>
+    <view wx:else>
+      <input  bindinput="tagsChange" maxlength='7'  placeholder="添加一个标签"/>
+    </view>
+  </view>
+    
+
+
+
+  <!-- 书籍的标题 -->
+   <view class='title' name="titleBlock" name="title">
+      <view class='text'>书名</view> 
+
+      <view class='content'>
+      
+          <view wx:if="{{istitle}}" name="hastitleBlock">
+          
+              <view id='titleId' name="title">{{title}}</view>
+          </view>
+          <view wx:else name="notitleBlock">
+              <view>
+                <input id='title' bindinput="titleChange" name="title" placeholder="填写书名"/>
+              </view>
+          </view>
+
+
+
+      </view>
+
+
+
+
+  </view> 
+
+
+
+
+
+
+  <!-- 书籍的作者 -->
+   <view class='title'>
+    <view class='text'>作者</view> 
+    <view class='content'>
+
+
+        <view wx:if="{{isauthor}}">
+
+            <view>{{author}}</view>
+        </view>
+        <view wx:else>
+            <view>
+              <input bindinput="authorChange"  placeholder="填写作者"/>
+            </view>
+        </view>
+
+
+
+
+    
+    
+    </view>
+    
+  </view> 
+  
+  
+<!-- 书籍的装帧 -->
+   <view class='title'>
+    <view class='text'>装帧</view> 
+    <view class='content'>
+
+        <view wx:if="{{isbinding}}">
+        
+        <view>{{binding}}</view>
+        </view>
+        <view wx:else>
+            <view>
+              <input bindinput='bindingChange' placeholder="填写装帧类型" />
+            </view>
+        </view>
+    
+    </view>
+    
+  </view> 
+
+
+
+  <!-- 书籍的页数 -->
+   <view class='title'>
+   <view class='text'>页数</view> 
+   <view class='content'>
+
+        <view wx:if="{{ispages}}">
+        
+        <view>{{pages}}</view>
+        </view>
+        <view wx:else>
+            <view>
+              <input type='number' bindinput='pagesChange' placeholder="填写页数" type='number'/>
+            </view>
+        </view>
+   
+   
+   
+   </view>
+    
+  </view> 
+
+  <!-- 书籍的价格 -->
+   <view class='title'>
+   <view class='text'>价格</view> 
+   <view class='content'>
+   
+   <view wx:if="{{isprice}}">
+        
+        <view>{{price}}</view>
+    </view>
+    <view wx:else>
+        <view>
+          <input type='number' bindinput='priceChange' placeholder="填写价格"/>
+        </view>
+    </view>
+   
+   
+   
+   
+   
+   </view>
+    
+  </view> 
+
+  <!-- 书籍的价格 -->
+   <view class='title'>
+   <view class='text'>出版日期</view> 
+   <view class='content'>
+
+
+        <view wx:if="{{ispubdate}}">
+        
+        <view>{{pubdate}}</view>
+        </view>
+        <view wx:else>
+            <view>
+              <input bindinput='pubdateChange' placeholder="填写出版日期"/>
+            </view>
+        </view>
+   
+   </view>
+     
+  </view>  
+
+    <!-- 书籍的价格 -->
+   <view class='title bottom'>
+    <view class='text'>出版社</view> 
+    <view class='content'>
+    
+    <view wx:if="{{ispublisher}}">
+        
+        <view>{{publisher}}</view>
+    </view>
+    <view wx:else>
+        <view>
+          <input bindinput='publisherChange' placeholder="填写出版社"/>
+        </view>
+    </view>
+    
+    
+    
+    
+    </view>
+    
+  </view> 
+
+    <!-- 书籍的信息 -->
+   <view class='book_introduce'>
+     <view class='ino-text'>简介：</view> 
+    <text class='count'>{{num}}/150</text>
+    <view class='info-content'>
+
+        <textarea class='info-input'  maxlength="150"  bindinput='infoChange' placeholder="填写书籍信息" auto-height  value='{{book_info}}'/>
+    
+    </view>
+    
+
+  </view> 
+
+
+    <view class='addBtn'>
+        <button class='btn'   bindtap="addBook">添加</button>
+    </view>
+    
+    
+
+
+  
+</view>
+
+
+</view>

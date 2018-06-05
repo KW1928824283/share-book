@@ -1,0 +1,38 @@
+<!--pages/login/login.wxml-->
+<view class="page-section">
+        <view class="page-section-title">用户名</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='uidInput' type='text' maxlength='15' placeholder='输入用户名' />
+            </view>
+          </view>
+        </view>
+</view>
+
+<view class="page-section">
+        <view class="page-section-title">密码</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='passwordInput' type='password' placeholder='输入密码' />
+            </view>
+          </view>
+        </view>
+</view>
+
+
+<view class='height'></view>
+      <view class="btn-area" id="buttonContainer">
+
+        <button bindtap='login'>登录</button>
+      
+      </view>
+
+
+
+
+
+<view class='goReg'>
+   <text  bindtap='register' class='register' >前往注册</text> 
+</view>

@@ -1,0 +1,28 @@
+/* pages/login/login.wxss */
+/**index.wxss**/
+@import "../../utils/weui.wxss";
+/*  */
+.height{
+  height: 30rpx;
+}
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #27a096;
+  color: #fff;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+.goReg{
+  text-align: center;
+
+}
+.register{
+  text-decoration-line: underline;
+  
+}

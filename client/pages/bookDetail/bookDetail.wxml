@@ -1,0 +1,66 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view class='book'>
+
+    
+        <image class='cover' mode='aspectFit' src='{{bookList.book_cover}}'></image>
+        <view class='info'>
+            <view class='title'>书名:{{bookList.title}}</view>
+
+
+             <view class='author'>作者:{{bookList.author}}</view>
+             <view class='publisher'>出版社:{{bookList.publisher}}</view>
+             <view class='date'>出版日期:{{bookList.pubdate}}</view>
+             <view class='page'>页数:{{bookList.pages}}</view>
+             <view class='price'>价格:{{bookList.price}}</view>
+             <view class='bind'>装帧:{{bookList.binding}}</view>        
+        
+        </view>
+
+
+</view>
+
+<view class='bookInfo'>
+  <text style='font-size:30rpx;'>简介：</text>
+  <view>{{bookList.book_info}}</view>
+</view>
+
+
+
+<view class='tags'>
+    <view  wx:for="{{bookList.tags}}" wx:key="key">
+        <view class='tag-item'>{{item}}</view>  
+    </view>
+</view>
+
+
+
+<view class='footer'>
+
+
+
+
+<view wx:if="{{booktype == 'self'}}">
+      
+      <view wx:if="{{msg.status == '0'}}">
+          <button class='btn' bindtap='lendFri'>借书给朋友</button>
+      </view>
+</view>
+<view class='lendtext' wx:elif="{{booktype == 'lendOut'}}">
+      已借给{{bookList.resNickName}}
+</view>
+<view class='lendtext' wx:elif="{{booktype == 'lendIn'}}">
+    {{bookList.reqNickName}}的书籍
+    <button class='btn' bindtap='retBook' >还书</button>
+</view>
+
+<view wx:if="{{booktype == 'other'}}">
+    <view wx:if="{{msg.status == '0'}}">
+      <button style='width:90%;margin-left: 5%;background-color: #27a096;color: #fff;' bindtap='reqLend'>向朋友借书</button>
+    </view>
+    <view wx:else>
+        该书暂不可借
+    </view>
+
+</view>
+
+</view>

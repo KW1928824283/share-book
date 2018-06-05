@@ -1,0 +1,77 @@
+<!--pages/addResDet/addResDet.wxml-->
+
+
+
+  <view wx:for="{{addResMsg}}" wx:key= "key">
+      <view id='{{item.reqUid}}'>
+          <form bindsubmit="addRes">
+              
+
+          
+              <view style='display:none'>
+                <input type="hidden" name= "reqUid" value='{{item.reqUid}}' />
+                <input type='hidden' name= "reqDesc" value='{{item.reqDesc}}' />
+                <input type='hidden' name= "remarkName" value='{{item.remarkName}}' />
+                <input type='hidden' name= "reqName" value='{{item.reqName}}' />
+                <input type='hidden' name= "time" value='{{item.time}}' />
+                <input type='hidden' name= "req_head_url" value='{{item.req_head_url}}' />
+                <input type='hidden' name= "res_head_url" value='{{item.res_head_url}}' />
+                
+              </view>
+
+
+              <view>
+              
+              
+              </view>
+              
+              <view class='title'>
+                <text>{{item.reqName}}请求添加好友</text>
+              </view>
+              
+              <view class='item'>
+                <view class='item-head'>
+                    <image src='{{item.req_head_url}}' class='item-img'></image>
+                   <text class='item-news'>  我是{{item.reqDesc}}</text>
+                </view>
+                
+                
+                <view class="page-section">
+                        <view class="page-section-title">备注</view>
+                        <view class="weui-cells weui-cells_after-title">
+                          <view class="weui-cell weui-cell_input">
+                            <view class="weui-cell__bd">
+                              <input class="weui-input" type='text' maxlength='30' name="resRemark" value='{{item.reqDesc}}' />
+                            </view>
+                          </view>
+                        </view>
+                </view>
+
+
+
+                <view class='item-btn'>
+                 
+
+                  <button style='border-radius: 15rpx;border: 1px #27a096 solid;color: #27a096;' class='ingore' id='{{item.reqUid}}' bindtap='Ingore' >忽略</button>
+                  <button style='border-radius: 15rpx;color: #fff;background-color: #27a096;' class='add' formType="submit">添加</button>
+                  
+                </view>
+
+
+              </view>
+              
+              
+              
+              
+              
+
+
+          </form>
+
+          
+          
+          
+      </view>
+  </view>
+
+

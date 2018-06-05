@@ -1,0 +1,90 @@
+/* pages/friend/friend.wxss */
+@import "../../utils/weui.wxss";
+.item{
+  display: flex;
+  flex-direction: row;
+  margin: 10rxp 30rpx 10rpx 30rpx;
+  vertical-align: middle;
+  font-size: 30rpx;
+  border-bottom: 1px #27a096 solid;
+  background-color: #f6fffe;
+}
+.item-img{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.item-text{
+  font-size: 40rpx;
+  height: 128rpx;
+  margin-top: 60rpx;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  vertical-align: middle;
+  justify-content: space-between;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.addBtn{
+  width: 180rpx;
+  height: 70rpx;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #27a096 ;
+  padding-top: 18rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.tip{
+  
+  
+  background-color: #eee;
+  padding: 0 0 0 20rpx;
+  border-bottom: 1px solid #27a096;
+}
+.hiddenDot{
+  display: none;
+}
+.showDot{
+  display: block;
+}
+.title{
+  border-top: 1px solid #27a096;
+  border-bottom: 1px solid #27a096;
+  padding-top: 20rpx;
+  height: 100rpx;
+}
+.item-navigator{
+  
+  margin:0 20rpx 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigator-text{
+  display: flex;
+  flex-direction: row;
+}
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  /* margin-top: 10rpx; */
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.addshare{
+  
+  height: 100%;
+  vertical-align: middle;
+  border: 1px #27a096 solid;
+  background-color: #fff;
+  color: #27a096;
+}

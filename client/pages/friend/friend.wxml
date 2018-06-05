@@ -1,0 +1,49 @@
+<!--pages/friend/friend.wxml-->
+
+
+
+  
+
+<view class='head'>
+<view>
+    <button class='addshare' open-type="share">微信添加好友</button>
+</view>
+  
+  <view  class='addBtn' bindtap='addFriend'>
+          添加朋友
+  </view>
+</view>
+
+
+
+
+
+<view class='title'>
+    <navigator class='item-navigator' open-type='navigate' url='../addResDet/addResDet'>
+      <view class='navigator-text'>
+
+          
+          <view class="{{showView?'show':'hide'}}">
+              <image src='../images/dot.png' class='icon'></image>
+
+          </view>
+          
+            
+          
+          <view class='new'>新朋友</view>
+      </view>
+            
+        <image src='../images/right.png' class='icon' ></image>
+    </navigator>
+
+
+</view>
+<view class='tip'>
+  朋友
+</view>
+<view wx:for="{{friendList}}" wx:key="key">
+          <view class='item' bindtap='friendSelected'  id="{{item.friend_uid}}">
+              <image class='item-img' src='{{item.friend_head_url}}'></image>  
+              <text class='item-text'>{{item.nickName}}</text> 
+          </view>
+    </view>

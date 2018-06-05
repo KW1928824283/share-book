@@ -1,0 +1,37 @@
+<!--pages/register/register.wxml-->
+
+<view class="page-section">
+        <view class="page-section-title">用户名</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='uidInput'  type='text' maxlength='15' placeholder='输入用户名' />
+            </view>
+          </view>
+        </view>
+</view>
+
+<view class="page-section">
+        <view class="page-section-title">密码</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='passInput'type='password' placeholder='输入密码' />
+            </view>
+          </view>
+        </view>
+</view>
+<view class="page-section">
+        <view class="page-section-title">昵称</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" bindinput='nickNameInput' type='text' maxlength='20' placeholder='昵称' value='{{userInfo.nickName}}' />
+            </view>
+          </view>
+        </view>
+</view>
+
+
+
+<button bindtap='doRegister'>注册</button>

@@ -1,0 +1,27 @@
+<!--pages/friendList/friendList.wxml-->
+
+<view>
+  
+
+   <view class='book'>
+            <image class='book_cover' mode='aspectFit' src='{{bookInfo.book_cover}}'></image>
+           
+
+            <view class='book_right'>
+                <view class='book_title'>{{bookInfo.title}}</view>
+
+                <view class='book_author'>{{bookInfo.author}}</view>
+            </view>
+        
+        
+  </view>
+
+
+    <view wx:for="{{friendList}}" wx:key="key">
+          <view class='item' bindtap='friendSelected' id="{{item.friend_uid}}">
+              <image class='item-img' src='{{item.friend_head_url}}'></image>  
+              <text class='item-text'>{{item.nickName}}</text> 
+          </view>
+    </view>
+
+</view>

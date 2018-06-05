@@ -1,0 +1,35 @@
+/* pages/addFriend/addFriend.wxss */
+@import "../../utils/weui.wxss";
+.head{
+  margin: 30rpx;
+}
+.search{
+  border: solid 1px #27a096;
+  border-radius: 15rpx;
+  height: 70rpx;
+  font-size: 45rpx;
+  vertical-align: middle;
+  padding-left: 25rpx;
+}
+.item-img{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.item{
+  display: flex;
+  background-color: #f6fffe;
+  border: solid 2rpx #27a096;
+  flex-direction: row;
+  border-radius: 15rpx;
+}
+.item-text{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rpx;
+}
+.item-id{
+  padding-top: 10rpx;
+  font-size: 35rpx;
+}

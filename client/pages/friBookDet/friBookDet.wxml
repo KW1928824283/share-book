@@ -1,0 +1,19 @@
+<!--pages/friBookDet/friBookDet.wxml-->
+<view wx:for="{{friBookList}}" wx:key="key">
+
+        <!-- 每一项书籍的信息 -->
+        <view class='book' bindtap='bookDetail' data-type='other' data-friUid='{{friUid}}' data-status='{{item.status}}' id='{{item.book_isbn}}'>
+            <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+           
+
+            <view class='book_right'>
+                <view class='book_title'>{{item.title}}</view>
+
+                <view class='book_author'>{{item.author}}</view>
+            </view>
+        
+        
+        </view>
+        
+        
+       </view>

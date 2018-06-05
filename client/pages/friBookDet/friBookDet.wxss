@@ -1,0 +1,20 @@
+/* pages/friBookDet/friBookDet.wxss */
+.book{
+  display: flex;
+  direction: row;
+  border-bottom: 1px #27a096 solid
+}
+.book_cover{
+    margin:20rpx; 
+    width:180rpx;
+    height: 200rpx;
+    background-color: #cbfffb; 
+}
+.book_right{
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+}
+.book_author{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}

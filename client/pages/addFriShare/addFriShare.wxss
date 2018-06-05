@@ -1,0 +1,98 @@
+/* pages/addFriShare/addFriShare.wxss */
+.icon-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100rpx;
+  
+
+}
+.icon-box-ctn{
+  text-align: center;
+}
+icon{
+  text-align: center;
+}
+button{
+  width: 90%;
+  margin-left: 5%;
+  background-color:#27a096;
+  color: #fff;
+  margin-top: 30rpx;
+
+}
+.icon{
+  width: 60rpx;
+  height: 60rpx;
+  /* margin-top: 10rpx; */
+}
+.title{
+  border-top: 1px #27a096 solid;
+  border-bottom: 1px #27a096 solid;
+  padding: 20rpx;
+}
+.item{
+  background-color: #f6fffe;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  padding-bottom: 15rpx;
+}
+.item-head{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+}
+.item-img{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+page-section{
+  background-color: #f6fffe;
+}
+input{
+  background-color: #f6fffe;
+}
+.item-news{
+  margin-top: 50rpx;
+}
+.page-section-title{
+  margin-left: 20rpx;
+}
+.weui-cell{
+  background-color: #f6fffe;
+} 
+.weui-cell_input{
+  background-color: #f6fffe;
+}
+.item-btn{
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.item-add{
+
+  border-radius: 15rpx;
+  color: #fff;
+  background-color: #27a096;
+}
+button{
+  width: 30%;
+}
+.item-ingore{
+  
+  border-radius: 15rpx;
+  border: 1px #27a096 solid;
+  color: #27a096;
+}
+input{
+  height: 60rpx;
+  background-color:#fff;
+  font-size: 40rpx;
+  margin: 0 30rpx 0 30rpx
+}
+.enter{
+  width: 90%;
+  margin-left: 5%;
+}

@@ -1,0 +1,171 @@
+<!--index.wxml-->
+
+
+<view class='head'>
+    
+  <view class='addBook' bindtap='addBook'>添加书籍</view>
+
+</view>
+<view>
+
+
+</view>
+
+
+
+<view class='tip'>
+ 
+</view>
+
+<view class='nav-title'>
+    <navigator class='item-navigator' open-type='navigate' url='../bookResDet/bookResDet'>
+      <view class='navigator-text'>
+
+          
+          <!-- <view class="hiddenDot{{showDot?'showDot':''}}">
+          
+            <image src='../images/dot.png' class='icon'></image>
+          </view> -->
+          <view class="{{showView?'show':'hide'}}">
+              <image src='../images/dot.png' class='icon'></image>
+
+          </view>
+          <view class='new'>新消息</view>
+      </view>
+            
+      <image src='../images/right.png' class='icon' ></image>
+    </navigator>
+
+
+</view>
+<view class='tip'>
+  书籍信息
+</view>
+<scroll-view>
+
+ 
+
+
+  <view class="title"  bindtap='onChangeShowState'>
+    <view class='title-item'>
+      <view class='title-text'>全部书籍</view>
+      <image src='{{title_direction}}' class='icon' ></image>
+      
+    </view>
+    
+    
+    
+ </view> 
+
+
+
+  <view class="{{allShowView?'show':'hide'}}">
+     
+      <view wx:for="{{bookList}}" wx:key="key">
+
+        <!-- 每一项书籍的信息 -->
+        <view class='book' bindtap='bookDetail' data-type='self' data-status='{{item.status}}' id='{{item.book_isbn}}'>
+            <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+           
+
+            <view class='book_right'>
+                <view class='book_title'>{{item.title}}</view>
+
+                <view class='book_author'>{{item.author}}</view>
+            </view>
+        
+        
+        </view>
+        
+        
+       </view>
+        
+
+
+
+      </view>
+      <view>
+      
+  </view>
+
+
+
+
+
+
+  <view>
+     <view class="title"  bindtap='onChangeShowStateLend'>
+    <view class='title-item'>
+      <view class='title-text'>借出书籍</view>
+      <image src='{{lend_title_direction}}' class='icon' ></image>
+      
+    </view>
+    
+ </view> 
+
+
+
+    <view class="{{lendShowView?'show':'hide'}}">
+        <view wx:for="{{lendOutList}}" wx:key="key">
+              <view class='book' bindtap='bookDetail' data-type='lendOut' data-resUid='{{item.resUid}}' data-status='lendOut' id='{{item.book_isbn}}'>
+
+                <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+            
+
+                  <view class='book_right'>
+                      <view class='book_title'>{{item.title}}</view>
+
+                      <view class='book_author'>{{item.author}}</view>
+                  </view>
+
+                </view>
+
+            </view>  
+        </view>
+    </view>
+
+  
+  
+  
+  <view>
+        <view class="title"  bindtap='onChangeShowStateBorrow'>
+    <view class='title-item'>
+      <view class='title-text'>借入书籍</view>
+      <image src='{{borrow_title_direction}}' class='icon' ></image>
+      
+    </view>
+    
+
+ </view> 
+
+
+    <view class="{{borrowShowView?'show':'hide'}}">
+       <view wx:for="{{lendInList}}" wx:key="key">
+        
+         <view bindtap='bookDetail' class='book' data-type='lendIn' data-reqUid='{{item.reqUid}}' data-status='lendIn' id='{{item.book_isbn}}'>
+         
+         <image class='book_cover' mode='aspectFit' src='{{item.book_cover}}'></image>
+            
+
+                  <view class='book_right'>
+                      <view class='book_title'>{{item.title}}</view>
+
+                      <view class='book_author'>{{item.author}}</view>
+                  </view>
+         
+         
+         
+         </view>  
+        
+      
+
+
+
+
+
+
+      </view>
+    </view>
+      
+  </view>
+</scroll-view>
